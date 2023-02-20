@@ -1,4 +1,4 @@
-<div id="<%= dom_id post %>">
+<div id="<%= dom_id post %>" class="card p-5">
   <p>
     <strong>Title:</strong>
     <%= post.title %>
@@ -9,4 +9,5 @@
     <%= post.body %>
   </p>
 
+  <%= render "posts/attachment", post: post %>
 </div>
